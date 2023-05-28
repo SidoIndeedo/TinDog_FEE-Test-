@@ -1,0 +1,194 @@
+body,html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ff4c68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.finalHeading{
+    font-weight: 900;
+}
+
+.finalisePara{
+    color: #8f8f8f;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+h3{
+    color: #8f8f8f;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+
+#paymentDiv{
+    background-color: #FFF;
+    display: grid;
+    height: 85%;
+    width:75%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    border-radius: 40px;
+    
+}
+
+.inputBoxCard{
+    border-radius: 8px;
+    background-color: #e8e3e3;
+    height: 30px;
+    width: 87%;
+    border: none;
+    padding: 8px 0px 8px 50px;
+    color: black;
+    font-weight: 900;
+    font-family: 'Changa', sans-serif;
+    font-size: 1rem;
+}
+.inputBoxDiscount{
+    border-radius: 8px;
+    background-color: #e8e3e3;
+    height: 30px;
+    width: 95%;
+    border: none;
+    padding: 8px 0px 8px 15px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.inputBoxExpiry{
+    border-radius: 8px;
+    background-color: #e8e3e3;
+    height: 30px;
+    width: 87%;
+    border: none;
+    padding: 8px 0px 8px 15px;
+    font-weight: 800;
+    font-size: 1rem;
+    color: black;
+}
+.inputBoxCvc{
+    border-radius: 8px;
+    background-color: #e8e3e3;
+    height: 30px;
+    width: 90%;
+    border: none;
+    padding: 8px 0px 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 800; 
+}
+
+.inputBoxCard::placeholder{
+    color: black;
+    font-weight: 900;
+    font-family: 'Changa', sans-serif;
+    font-size: 1rem; 
+}
+.inputBoxDiscount::placeholder{
+    font-weight: 600;
+    font-size: 1.2rem; 
+}
+.inputBoxExpiry::placeholder{
+    font-weight: 800;
+    font-size: 1rem;
+    color: black; 
+}
+.inputBoxCvc::placeholder{
+     font-size: 0.8rem;
+     font-weight: 800;    
+}
+
+.payNow{
+    width: 40%;
+    height: 55px;border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #0079c1;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;   
+}
+.payNow:hover{
+    background-color: #00457c;
+}
+
+.masterCard{
+    height: auto;
+    width: 30px;
+    position: absolute;
+    left: 255px;
+    top: 261px;
+}
+
+.right{
+    padding: 20px 70px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+img{
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.rightBottom{
+    padding: 12px 0;
+}
+
+.orderSummary{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+th,td{
+    padding: 5px 50px 5px 0px;
+}
+
+.tableRight{
+    font-weight: 900;
+}
+
+.tableLeft{
+    color: #8f8f8f;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+#total{
+    color: black;
+    font-weight: 900;
+    padding: 0 73.53px 0 73.53px;
+}
+#totalValue{
+    color: #ff4c68;
+    font-size: 1.2rem;
+}
+.left{
+    padding: 20px 20px 20px 70px;
+    
+}
+
+.expiry{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    height: auto;
+}
+
+.line{
+    width: 70%;
+    height: 1px;
+    background-color:#8f8f8f;
+    margin: 0;
+    
+}

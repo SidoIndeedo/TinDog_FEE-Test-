@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css-mysite/profile.css" />
+   
+    
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <title>Oliver</title>
+    <script
+    src="https://kit.fontawesome.com/87601cc28a.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+
+   
+
+    <span class="brandname">tindog</span>
+    <span><a class="add_btn" href="#">Add Friend</a></span>
+    <div class="middle-container">
+      <div class="profile">
+        <img
+          class="profilePic"
+          height="225px"
+          width="225px"
+          style="border-radius: 100%;"
+          src="/css-mysite/ProfileImages/profileimg.jpg"
+          alt="profile-picture"
+        />
+        
+        
+        <h2 class="profile_hlo">Oliver <img class="verify" src="/css-mysite/ProfileImages/verify.png"></h2>
+        <p class="profile_para">
+          🐾 Meet Oliver🐾
+Pawsitively adorable and full of wag-tastic energy! From fetching balls to stealing hearts, this furry influencer is here to spread joy, melt hearts, and make your day a whole lot brighter! 🌟
+          Heart full of joy.</strong>
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>Qualities</h2>
+
+        <div class="skill-row">
+          <img
+            class="web_skill_img"
+            src="/css-mysite/ProfileImages/dog-7306209.png"
+            alt="front-end developer"
+          />
+          <h3>Loyalty</h3>
+          <p class="skills_para">
+            Dogs embody unwavering loyalty, standing faithfully by our side. They're our steadfast companions, offering support and comfort. Their loyalty is an inspiring reminder of the bond we share, unbreakable and everlasting.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img
+            class="marketing_skill_img"
+            src="/css-mysite/ProfileImages/dog-2155329.png"
+            alt=""
+          />
+          <h3>Playfulness</h3>
+          <p class="skills_para">
+            With boundless energy and a contagious spirit, dogs bring an endless sense of playfulness to our lives. They remind us to embrace the present moment, unleashing our inner child and finding joy in the simplest of things.
+
+
+          </p>
+        </div>
+        <div class="skill-row">
+          <img
+            class="editing_skill_img"
+            src="/css-mysite/ProfileImages/dog-7332656.png"
+            alt="front-end developer"
+          />
+          <h3>Unconditional Love</h3>
+          <p class="skills_para">
+            The love of a dog knows no bounds or conditions. They love us fiercely, without judgment or reservation. Their unwavering affection and gentle presence provide solace, reminding us that we are cherished and accepted just as we are.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Loved our Profile ? Oliver is waiting...</h3>
+        <p class="contact_para">
+          Do you have a friend to my Paw? Let's talk about how awesome they
+          will be together!<br />
+          
+        </p>
+        <a class="contact_btn" href="#">Add Friend</a>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      
+      <p class="copyright_line">© 2023 Copyright @TinDog.</p>
+    </div>
+  </body>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(".add_btn").click(function(){
+      $(this).html("<em>Requested</em>");
+      $(this).css("background-color", "#fff");
+      $(this).css("color", "gray");
+      $(this).css("font-weight", "700");
+      $(".contact_btn").html("<em>Requested</em>");
+      $(".contact_btn").css("background-color", "#fff");
+      $(".contact_btn").css("color", "gray");
+      $(".contact_btn").css("font-weight", "700");
+    })
+    $(".contact_btn").click(function(){
+      $(this).html("<em>Requested</em>");
+      $(this).css("background-color", "#fff");
+      $(this).css("color", "gray");
+      $(this).css("font-weight", "700");
+      $(".add_btn").html("<em>Requested</em>");
+      $(".add_btn").css("background-color", "#fff");
+      $(".add_btn").css("color", "gray");
+      $(".add_btn").css("font-weight", "700");
+    })
+  </script>
+</html>

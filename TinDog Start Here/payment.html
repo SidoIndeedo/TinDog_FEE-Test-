@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="/TinDog Start Here/css/payment.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="paymentDiv">
+      <div class="left">
+       <form action="mailto:anuj2002kumar@gmail.com" method="post" enctype="text/plain">
+        <h1 class="finalHeading">Final step, make the payment.</h1>
+        <p class="finalisePara">
+          To finalise your subscription, kindly complete your payment using a
+          valid credit card.
+        </p>
+        <h3>Card number</h3>
+        <img
+          class="masterCard"
+          src="/TinDog Start Here/images/mastercard-logo-mastercard-logo-png-vector-download-19.png"
+        />
+        <input
+          name="carnNumber"
+          minlength="16"
+          maxlength="16"
+          required
+          class="inputBoxCard"
+          type="text"
+          placeholder="  9 8 7 0     8 8 8 0     8 8 8 0     8 8 8 0"
+        />
+        <div class="expiry">
+          <div>
+            <h3>Expiry</h3>
+            <input
+              name="exrDate"
+              required
+              minlength="5"
+              maxlength="5"
+              class="inputBoxExpiry"
+              type="text"
+              placeholder="16  /  26"
+            />
+          </div>
+          <div>
+            <h3>CVC</h3>
+            <input
+              name="cvv"
+              minlength="3"
+              maxlength="3"
+              required
+              class="inputBoxCvc"
+              type="password"
+              placeholder="X  X  X"
+            />
+          </div>
+        </div>
+        <h3>Discount Code</h3>
+        <input name="disCode" class="inputBoxDiscount" type="text" minlength="10" maxlength="10" placeholder="C00-20-OFF"/>
+        <button class="payNow" style="display: block" type="submit">
+          Pay Now
+        </button>
+       </form>
+      </div>
+
+      <div class="right">
+        <div class="rightTop">
+          <img src="/TinDog Start Here/images//paymentpageimg.png" />
+        </div>
+        <div class="rightBottom">
+          <h2 class="orderSummary">Order Summary</h2>
+          <table >
+            <tr>
+              <td class="tableLeft">Item</td>
+              <td class="tableRight" id="showItemName">Ignite</td>
+            </tr>
+
+            <tr>
+              <td class="tableLeft">Subtotal</td>
+              <td class="tableRight" id="showItemPrice">$99</td>
+            </tr>
+
+            <tr>
+              <td class="tableLeft">Discount</td>
+              <td class="tableRight" id="discountValue">$3</td>
+            </tr>
+
+            <tr>
+              <td class="tableLeft">Taxes and Charges</td>
+              <td class="tableRight" id="taxesValue">$0.99</td>
+            </tr>
+          </table>
+          <hr class="line">
+          <table>
+            <tr>
+              <th class="tableLeft" id="total">Total</th>
+              <th class="tableRight" id="totalValue">$96.99</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/TinDog Start Here/index.js">
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

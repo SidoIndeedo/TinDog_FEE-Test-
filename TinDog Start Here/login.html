@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/TinDog Start Here/css/login.css" type="text/css" />
+    <title>Login</title>
+  
+    <script
+    src="https://kit.fontawesome.com/87601cc28a.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="outer">
+      <span class="brandname">tindog</span>
+        
+            <div class="container">
+
+               <form id="myform" align="center"  enctype="text/plain" method="get" onsubmit="return validateform()">
+                <h1 >Login</h1>
+                <div id="error" style="text-align: left;"></div>
+                <input id="u-name"  class="input-box" type="email" name="uName" placeholder="Email" minlength="10" autocomplete="on" >
+                <input id="pass" class="input-box" type="password" autocomplete="on"  name="pwd"  placeholder="Password" >
+                <div>
+                    <input type="checkbox" id="remember" name="rememberMe" checked>
+                    <label class="checkbox" for="remember">Remember Me</label>
+                    <span ><a class="forgot" href="">Forgot Password?</a></span>
+                  </div>
+        
+                  <button class="btn" id="submit" type="submit" class="btn">Log In</button>
+                  <h2>Login</h2>
+                  <p>With your social media account</p>
+               </form>
+             <div class="social">
+                <button class="social-t"><a style="text-decoration: none; color:#fff;" href=""><i class="fa-brands fa-twitter" style="color: #3b71ce;"></i> Twitter</a></button>
+                <button class="social-f"><a style="text-decoration: none; color:#fff;" href=""><i class="fa-brands fa-facebook" style="color: #0d1c35;"></i> Facebook</a></button>
+              
+                <button class="social-g"><a style="text-decoration: none; color:#fff;" href=""><i class="fa-brands fa-google-plus-g" style="color: #e83926;"></i> Google+</a></button>
+                <p id="trouble"><em>Having trouble Login? Get Help.</em></p>
+             </div>
+            </div>
+            
+    </div>
+
+    <script>
+      function validateform() {
+        var u = document.forms["myform"]["u-name"].value;
+        var x = document.forms["myform"]["pass"].value;
+        
+        if (u == "" ||  x == "") {
+          document.getElementById("error").innerHTML =
+            "Required fields are mandatory.";
+          document.getElementById("error").style.color = "red";
+          return false;
+        } else {
+          if(x.length < 8){
+            document.getElementById("error").innerHTML =
+            "Password should atleast be 8 characters.";
+            document.getElementById("error").style.color = "red";
+            return false;
+          }
+          else{
+            window.open("/css-mysite/profile.html")
+            return true;
+          }
+        }
+        
+      }
+      
+
+    </script>
+
+
+  </body>
+</html>
